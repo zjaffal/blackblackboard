@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "blakeboard",
+    "version": "0.1.1",
+    "description": "Changing blackboard to be actually black",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "declarativeContent",
+        "tabs",
+        "https://online.manchester.ac.uk/"
+    ]
+}

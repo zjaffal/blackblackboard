@@ -1,0 +1,35 @@
+.contentBox {
+    background-color: #212121 !important;
+    color: white !important;
+}
+
+body {
+    background-color: #212121 !important;
+}
+.contentBox *{
+    background-color: #212121 !important;
+    border-color: #424242 !important;
+    color: white !important
+}
+.contentBox a{
+    color: #F57C00 !important
+}
+.contentBox svg{
+    fill:  white !important;
+}
+div[id*="stepcontent"] {
+    padding: 0 0 0 24px;
+    border-top: 0;
+    background-color: #212121 !important;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0 20px 20px 0
+}
+.contentBox button.active {
+    background-color: #E65100 !important;
+    color: white;
+}
+
+.contentBox button {
+    background-color: #9E9E9E !important;
+    color: white;
+}
