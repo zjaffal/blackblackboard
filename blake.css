@@ -1,18 +1,32 @@
-.contentBox {
-    background-color: #212121 !important;
+
+:root {
+    --main-bg-color : #212121;
+    --border-color: #424242;
+    --accent-color : #F57C00;
+    --active-button-color: #E65100;
+    --inactive-button-color: #9E9E9E;
+}
+* {
+    background-color: var(--main-bg-color) !important;
     color: white !important;
 }
 
 body {
-    background-color: #212121 !important;
+    border-color: var(--border-color) !important;
 }
-.contentBox *{
-    background-color: #212121 !important;
-    border-color: #424242 !important;
+.contentPane .shadow {
+    border-color: var(--main-bg-color)!important;
+}
+span {
+    color: var(--accent-color) !important
+}
+.contentBox * {
+    background-color: var(--main-bg-color) !important;
+    border-color: var(--border-color) !important;
     color: white !important
 }
 .contentBox a{
-    color: #F57C00 !important
+    color: var(--accent-color) !important
 }
 .contentBox svg{
     fill:  white !important;
@@ -20,16 +34,19 @@ body {
 div[id*="stepcontent"] {
     padding: 0 0 0 24px;
     border-top: 0;
-    background-color: #212121 !important;
+    background-color: var(--main-bg-color) !important;
     border-bottom: 1px solid #cdcdcd;
     padding: 0 20px 20px 0
 }
 .contentBox button.active {
-    background-color: #E65100 !important;
+    background-color: var(--active-button-color) !important;
     color: white;
 }
 
 .contentBox button {
-    background-color: #9E9E9E !important;
+    background-color: var(--inactive-button-color) !important;
     color: white;
+}
+.column-3 {
+    display: none;
 }

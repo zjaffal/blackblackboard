@@ -2,22 +2,44 @@
 <html>
   <head>
     <style>
-      button {
-        height: 30px;
-        width: 100px;
-        outline: none;
+      #header {
+        margin: 0;
+        width: 100%;
+        background-color: blueviolet;
+        color: gold;
+      }
+      #bd {
+        padding: 10px;
+      }
+      html{
+        border-radius: 10px;
       }
       body {
+        margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        width: 15em;
+        height: 15em;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
         text-align: center;
+      }
+      button {
+        width: 100%;
+        height: 40px;
       }
     </style>
   </head>
   <body>
-    <h3>BlakeBoard</h3>
-    <button id="changeMode">Change mode</button>
+    <div id="header">
+      <h3>Black Blackboard</h3>
+    </div>
+    <div id="bd">
+      <p>Toggle dark mode off when using exams/quizes for best behaviour</p>
+      <button id="changeMode">Toggle dark mode on</button>
+    </div>
     <script src="changeMode.js"></script>
   </body>
 </html>

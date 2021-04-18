@@ -6,6 +6,21 @@ chrome.storage.sync.get('mode', data => {
 changeColor.onclick = element => {
     mode = element.target.value
     if (mode == 'dark'){
-        chrome.tabs.insertCSS({"file": "blake.css"}, () => console.log("insertedCSS"))
+
+        localStorage.setItem("mode", "light")
+        chrome.storage.sync.set({ mode: 'light' }, function () {
+        });
+        changeColor.setAttribute('value', 'light')
+        changeColor.innerText = "Toggle dark mode on"
+        chrome.tabs.reload()
+
+    }else {
+        localStorage.setItem("mode", "light")
+        chrome.storage.sync.set({ mode: 'dark' }, function () {
+        });
+        changeColor.setAttribute('value', 'dark')
+        changeColor.innerText = "Toggle light mode on"
+        chrome.tabs.reload()
+
     }
 }
