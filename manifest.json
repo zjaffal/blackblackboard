@@ -21,8 +21,6 @@
         "permissions": [
         "storage",
         "declarativeContent",
-        "tabs",
-        "activeTab",
         "https://online.manchester.ac.uk/*"
     ],
     "web_accessible_resources": ["blake.css"]
